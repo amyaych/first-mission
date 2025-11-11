@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission 2 find the Word</title>
+    <!-- Links -->
+    <link rel="stylesheet" href="STYLE.CSS" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="SCRIPT.JS" defer></script>
+  </head>
+  <body>
+    <!-- Instruction box -->
+    <div id="instruction-box">
+      <h1>Mission 02</h1>
+      <p>Find the hidden letters</p>
+      <p>Once all 10 letters are found, guess the word!</p>
+    </div>
+
+    <!-- Counter box (top right) -->
+    <div id="counter-box">
+      <p><span id="counter">0</span>/10</p>
+    </div>
+
+    <!-- game container -->
+    <div id="game-container">
+      <!-- 10 letter buttons -->
+      <button class="letter-btn" id="btn-j" data-letter="J">J</button>
+      <button class="letter-btn" id="btn-a1" data-letter="A">A</button>
+      <button class="letter-btn" id="btn-v" data-letter="V">V</button>
+      <button class="letter-btn" id="btn-a2" data-letter="A">A</button>
+      <button class="letter-btn" id="btn-s" data-letter="S">S</button>
+      <button class="letter-btn" id="btn-c" data-letter="C">C</button>
+      <button class="letter-btn" id="btn-r" data-letter="R">R</button>
+      <button class="letter-btn" id="btn-i" data-letter="I">I</button>
+      <button class="letter-btn" id="btn-p" data-letter="P">P</button>
+      <button class="letter-btn" id="btn-t" data-letter="T">T</button>
+    </div>
+
+    <!-- Footer with collected letters -->
+    <div id="collected-footer">
+      <p>Found: <span id="letters-display"></span></p>
+    </div>
+
+    <!-- answer section, will only show once all letters collected -->
+    <div id="answer-section">
+      <p>Unscramble the letters to guess the word and win:</p>
+      <input
+        type="text"
+        id="answer-input"
+        placeholder="Type your answer here"
+      />
+      <button id="submit-btn">Submit</button>
+    </div>
+
+    <!-- Winners message -->
+    <div id="winners-message">
+      <h2>Mission Complete!</h2>
+      <p>You are an elite employee!</p>
+    </div>
+
+    <!-- Reset button -->
+    <button id="reset-btn">Restart</button>
+  </body>
+</html>
